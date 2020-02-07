@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b4638a0-8f28-46bb-8794-726e7dad2160" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile.jvm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile.native" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/ContainerConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/UndertowTestRunner.java-AFFECT_COMPILE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsyncGenericEntityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsyncInjectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsyncPostProcessingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsyncRequestFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsyncServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsyncUnhandledExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsynchBasicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsynchContextualDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/AsynchCounterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/CallbackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/ComprehensiveJaxrsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/JaxrsAsyncServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/JaxrsAsyncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/SuspendAnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncFilterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncFilterExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncGenericEntityMessageBodyWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncGenericEntityResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionBooleanInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionByteInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionCharInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionContextAsyncSpecifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionContextErrorSpecifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionContextInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionContextInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionContextInterfaceInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionDoubleInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionFloatInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionIntInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionLongInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionPrimitiveInjectorSpecifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionResource2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncInjectionShortInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncPostProcessingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncPostProcessingMsgBodyWriterInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncPostProcessingResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncPreMatchRequestFilter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncPreMatchRequestFilter2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncPreMatchRequestFilter3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncRequestFilter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncRequestFilter2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncRequestFilter3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncRequestFilterResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncResponseFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncResponseFilter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncResponseFilter2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncResponseFilter3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncServletResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsyncUnhandledExceptionResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsynchBasicResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsynchContextualDataProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsynchContextualDataResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/AsynchCounterResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackExceptionThrowingStringBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackResourceBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackSecondSettingCompletionCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackSettingCompletionCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackStringBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackStringBeanEntityProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/CallbackTimeoutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletAsyncResponseBlockingQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletJaxrsResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletPrintingErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletServiceUnavailableExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletTimeoutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/JaxrsAsyncServletXmlData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/asynch/resource/LegacySuspendResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/AcceptLanguagesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/AnnotationInheritanceGenericsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/AnnotationInheritanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/AppConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ApplicationConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ApplicationFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ApplicationPropertiesConfigPropertyApplicationInjectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ApplicationPropertiesConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ByeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/CacheControlAnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ContextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/DuplicateDeploymentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/FileExtensionMappingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/InternalDispatcherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/InvalidMediaTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/NoApplicationSubclassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/NullHeaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/PartialAnnotationResourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/PrivateConstructorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/ProviderInjectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AcceptLanguagesResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceGenericsAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceGenericsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceGenericsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceGenericsInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceNotAResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceSomeOtherInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceSomeOtherResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceSuperInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AnnotationInheritanceSuperIntAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AppConfigApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/AppConfigResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationConfigInjectionResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationConfigInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationConfigQuotedTextWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationConfigResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationFilterCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationFilterCustomerResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationPropertiesConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationPropertiesConfigPropertyApplicationInjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationPropertiesConfigPropertyApplicationInjectionFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationPropertiesConfigPropertyApplicationInjectionResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationPropertiesConfigResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestAExplicitApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestBExplicitApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestIgnoredApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestMappedApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestResourceA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestResourceB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestScannedApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestSingletonA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ApplicationTestSingletonB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ByeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/CacheControlAnnotationResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ContextAfterEncoderInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ContextBeforeEncoderInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ContextEncoderInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ContextEndInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ContextService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/FileExtensionMappingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/FileExtensionMappingResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/InternalDispatcherClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/InternalDispatcherForwardingResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/InvalidMediaTypeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/NoApplicationSubclassResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/NullHeaderFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/NullHeaderResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/PartialAnnotationResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/PartialAnnotationResourceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/PrivateConstructorServiceResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ProviderInjectionSimpleMessageBodyWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ProviderInjectionSimpleResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jboss/resteasy/test/core/basic/resource/ProviderInjectionSimpleResourceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/XX-arquillian.xml-KEEP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jboss-deployment-structure-bouncycastle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jboss-deployment-structure-json-b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jboss-deployment-structure-no-json-b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/asynch/AsyncPostProcessingTestWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/asynch/CallbackTestWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/asynch/JaxrsAsyncServletWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/ejb/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/generic/concrete_beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/inheritence/alternativeSelectedBeans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/inheritence/alternativeVanillaBeans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/inheritence/specializedBeans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/injection/ProviderFinalClass_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/injection/injectionJpaEnumType/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/injection/injectionJpaEnumType/load.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/injection/injectionJpaEnumType/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/injection/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/injection/persistence_subdeployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/interceptors/interceptorBeans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/modules/ejb-jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/cdi/validation/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/client/ChunkedTransferEncodingTestFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/client/javax.ws.rs.ext.Providers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/AppConfigWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/ApplicationFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/ApplicationFilterWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/ApplicationWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/ContextIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/ContextWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/FileExtensionMapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/basic/NoApplicationSubclassWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/servlet/FilterWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/servlet/ServletConfigWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/servlet/ServletMappingJbossWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/servlet/ServletMappingWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/core/servlet/UndertowWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/crypto/SigningTest.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/crypto/VerifyDecryptMycert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/crypto/VerifyDecryptMycertPrivate.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/injection/PostConstructInjection_beans_cdi_off.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/injection/PostConstructInjection_beans_cdi_on.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/interceptor/gzip/GzipAbstractTest-javax.ws.rs.ext.Providers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/jsapi/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/microprofile/config/web_filter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/microprofile/config/web_servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/microprofile/config/web_servlet_context_listener.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/microprofile/config/web_use_global.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/custom/CustomConstrainedFeature.Providers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/custom/FilterDispatcherManifest.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/custom/FilterDispatcherManifestWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/custom/MissingProducer.Providers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/datasource/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/html/HtmlSanitizerOptional_Default_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/html/HtmlSanitizerOptional_Disabled_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/html/HtmlSanitizerOptional_Enabled_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/iioimage/test.wdp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/iioimage/test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/iioimage/test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jackson2/javax.ws.rs.ext.Providers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jackson2/jboss-deployment-structure-exclude-jaxrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jackson2/jsonfilter/web-filter-conditional.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jackson2/jsonfilter/web-filter-multiple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jackson2/jsonfilter/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jaxb/homecontrol/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jaxb/orders/order.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/jaxb/orders/order_123.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/mediatype/BlacklistedMediaTypeFile1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/mediatype/BlacklistedMediaTypeFile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/multipart/EncodingMimeMultipartFormProviderTestData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/multipart/HeaderFlushedOutputStreamTestData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/noproduces/ProviderWithNoProduces_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/sse/filter/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/sse/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/sse/synch-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/providers/sse/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/resource/param/javax.ws.rs.ext.Providers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/resource/param/javax.ws.rs.ext.Providers_HeaderDelegateAsProvider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/resource/path/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/client-different-cert.truststore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/client-wildcard-hostname.truststore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/client-wrong-hostname.truststore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/client.truststore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/jboss-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/jboss-web2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/roles.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/securityContext/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/server-different-cert.keystore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/server-wildcard-hostname.keystore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/server-wrong-hostname.keystore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/server.keystore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/ssl-batch-command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/users.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/security/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/validation/ExecutableValidationDisabledValidationDisabled.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/validation/GetterReturnValueValidatedValidation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/ExternalParameterEntity.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/ExternalParameterEntityExpandWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/ExternalParameterEntityNoExpandWeb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/ExternalParameterEntityPasswd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_external.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_default_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_default_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_default_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_false_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_false_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_false_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_true_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_true_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_default_true_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_default_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_default_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_default_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_false_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_false_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_false_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_true_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_true_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_false_true_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_default_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_default_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_default_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_false_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_false_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_false_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_true_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_true_false.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessing_web_true_true_true.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/SecureProcessiongTestpasswd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/XxeJaxbPasswd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/jboss/resteasy/test/xxe/testpasswd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="531">
+                <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="301" column="24" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="100" />
+    <option name="y" value="194" />
+    <option name="width" value="1445" />
+    <option name="height" value="871" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="quarkus-Before-annotation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quarkus-Before-annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b4638a0-8f28-46bb-8794-726e7dad2160" name="Default Changelist" comment="" />
+      <created>1581104635971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581104635971</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="100" y="194" width="1445" height="871" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10552764" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Sequence" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="301" column="24" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="531">
+            <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

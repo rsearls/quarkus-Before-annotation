@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jboss.resteasy</groupId>
+  <artifactId>quarkus-Before-annotation</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <properties>
+    <compiler-plugin.version>3.8.1</compiler-plugin.version>
+    <maven.compiler.parameters>true</maven.compiler.parameters>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <quarkus-plugin.version>1.2.0.Final</quarkus-plugin.version>
+    <!-- replace ref to quarkus-universe-bom to be quarkus-bom -->
+    <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
+    <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
+
+    <quarkus.platform.version>1.2.0.Final</quarkus.platform.version>
+    <!--
+    <quarkus.platform.version>1.3.0.Alpha1</quarkus.platform.version>
+    -->
+    <surefire-plugin.version>2.22.1</surefire-plugin.version>
+
+    <!-- ############# properties added to orig ############## -->
+    <resteasy-version>4.5.0-SNAPSHOT</resteasy-version>
+    <dep.arquillian-bom.version>1.4.1.Final</dep.arquillian-bom.version>
+    <javax.servlet-api-version>3.1.0</javax.servlet-api-version>
+    <jboss-servlet-api_4.0_spec-version>2.0.0.Final</jboss-servlet-api_4.0_spec-version>
+    <version.log4j>2.9.1</version.log4j>
+    <version.io.undertow>2.0.23.Final</version.io.undertow>
+    <version.eclipse.jdt>3.5.0</version.eclipse.jdt>
+    <version.testng>6.9.9</version.testng>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-bom</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- ######## additions to orig ############### -->
+      <dependency>
+        <groupId>org.jboss.arquillian</groupId>
+        <artifactId>arquillian-bom</artifactId>
+        <version>${dep.arquillian-bom.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <!-- todo 5 required by  org/jboss/resteasy/test/asynch/AsynchBasicTest -->
+    <dependency>
+      <groupId>com.io7m.xom</groupId>
+      <artifactId>xom</artifactId>
+      <version>1.2.10</version>
+    </dependency>
+    <!-- todo 5  -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-undertow</artifactId>
+      <!-- <version>1.2.0.Final</version> -->
+    </dependency>
+
+<!-- todo 4
+    <dependency>
+      <groupId>org.eclipse.jdt</groupId>
+      <artifactId>org.eclipse.jdt.junit.runtime</artifactId>
+      <version>${version.eclipse.jdt}</version>
+    </dependency>
+ -->
+    <!-- required -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>${version.testng}</version>
+    </dependency>
+
+<!-- todo 3
+    <dependency>
+      <groupId>org.jboss.shrinkwrap</groupId>
+      <artifactId>shrinkwrap-impl-base</artifactId>
+    </dependency>
+ -->
+<!-- required for individual tests to be run -->
+    <dependency>
+      <groupId>org.jboss.arquillian.testng</groupId>
+      <artifactId>arquillian-testng-container</artifactId>
+      <version>${dep.arquillian-bom.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jboss.arquillian.test</groupId>
+      <artifactId>arquillian-test-impl-base</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.arquillian.core</groupId>
+      <artifactId>arquillian-core-impl-base</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.arquillian.junit</groupId>
+      <artifactId>arquillian-junit-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>${version.log4j}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${version.log4j}</version>
+    </dependency>
+    <!-- resolves java.lang.ClassNotFoundException:
+      org.glassfish.jersey.client.JerseyClientBuilder
+    -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-client</artifactId>
+    </dependency>
+    <!-- resolves java.lang.NoSuchMethodError:
+      org.jboss.resteasy.core.ResteasyContext.addCloseableContextDataLevel()L
+      org/jboss/resteasy/core/ResteasyContext$CloseableContext;
+    -->
+    <!-- todo 2
+      <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-core</artifactId>
+      </dependency>
+-->
+<!-- todo  required for tests in asynch dir-->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxb-provider</artifactId>
+    </dependency>
+
+    <!-- added for test AsynchContextualDataTest -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-json-binding-provider</artifactId>
+    </dependency>
+
+    <!-- https://github.com/quarkusio/quarkus/issues/2701
+        recommended using this
+    NOTE: only needed when using eclipse ide
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+-->
+    <!-- Quarkus - Arquillian Adapter -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-arquillian</artifactId>
+      <version>${quarkus.platform.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy</artifactId>
+    </dependency>
+    <!-- has QuarkusTest annotation  ... not using
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+-->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- replaces quarkus-junit5 -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>utils-arquillian-utils</artifactId>
+      <version>${resteasy-version}</version>
+      <scope>test</scope>
+      <exclusions>
+        <!-- MUST be excluded -->
+        <exclusion>
+          <groupId>org.jboss.resteasy</groupId>
+          <artifactId>resteasy-client</artifactId>
+        </exclusion>
+        <!-- MUST be excluded -->
+        <exclusion>
+          <groupId>org.jboss.resteasy</groupId>
+          <artifactId>resteasy-validator-provider</artifactId>
+        </exclusion>
+        <!-- remove  wfly arq code .. interferes with qrk-arq  -->
+        <exclusion>
+          <groupId>org.wildfly.arquillian</groupId>
+          <artifactId>wildfly-arquillian-container-managed</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jboss.spec.javax.servlet</groupId>
+      <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+      <version>2.0.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+
+  </dependencies>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-maven-plugin</artifactId>
+        <version>${quarkus-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>build</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${compiler-plugin.version}</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${surefire-plugin.version}</version>
+        <configuration>
+          <systemProperties>
+            <quarkus.tester>true</quarkus.tester> <!-- required for PortProviderUtil -->
+            <org.jboss.resteasy.port>8081</org.jboss.resteasy.port>
+            <java.io.tmpdir>${project.build.directory}</java.io.tmpdir>
+            <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+          </systemProperties>
+
+          <excludes>
+            <!-- run passing test -->
+            <exclude>org/jboss/resteasy/test/core/basic/ByeTest.java</exclude>
+
+            <exclude>org/jboss/resteasy/test/core/basic/ApplicationPropertiesConfigTest.java</exclude>
+            <exclude>org/jboss/resteasy/test/core/basic/PrivateConstructorTest.java</exclude>
+            <exclude>org/jboss/resteasy/test/core/basic/CacheControlAnnotationTest.java</exclude>
+            <exclude>org/jboss/resteasy/test/core/basic/NullHeaderTest.java</exclude>
+            <exclude>org/jboss/resteasy/test/core/basic/AcceptLanguagesTest.java</exclude>
+            <exclude>org/jboss/resteasy/test/core/basic/ApplicationConfigTest.java</exclude>
+            <exclude>org/jboss/resteasy/test/core/basic/ApplicationPropertiesConfigPropertyApplicationInjectionTest.java</exclude>
+
+
+            <!-- fails (method is not visible from class loader) --><exclude>org/jboss/resteasy/test/core/basic/AnnotationInheritanceGenericsTest.java</exclude>
+            <!-- fails (method is not visible from class loader) --><exclude>org/jboss/resteasy/test/core/basic/PartialAnnotationResourceTest.java</exclude>
+            <!-- fails (method is not visible from class loader) --><exclude>org/jboss/resteasy/test/core/basic/AnnotationInheritanceTest.java</exclude>
+
+            <!-- fails web.xml  --><exclude>org/jboss/resteasy/test/core/basic/InvalidMediaTypeTest.java</exclude>
+            <!-- fails  web.xml --><exclude>org/jboss/resteasy/test/core/basic/ApplicationFilterTest.java</exclude>
+            <!-- fails  web.xml --> <exclude>org/jboss/resteasy/test/core/basic/NoApplicationSubclassTest.java</exclude>
+            <!-- fails  web.xml --><exclude>org/jboss/resteasy/test/core/basic/FileExtensionMappingTest.java</exclude>
+            <!-- fails  web.xml --><exclude>org/jboss/resteasy/test/core/basic/AppConfigTest.java</exclude>
+            <!--
+              Quarkus does not write to log files.
+              The proper number of error msgs are written to the terminal.
+              The test can not count them.  This test does run successfully
+            --> <exclude>org/jboss/resteasy/test/core/basic/DuplicateDeploymentTest.java</exclude>
+            <!-- fails  web.xml --><exclude>org/jboss/resteasy/test/core/basic/ContextTest.java</exclude>
+            <!-- fails
+              Some strange interaction between quarkus-arquillian and interface proxy class
+              being built.
+            --> <exclude>org/jboss/resteasy/test/core/basic/ProviderInjectionTest.java</exclude>
+            <!--
+              Passes with code change
+            --><exclude>org/jboss/resteasy/test/core/basic/InternalDispatcherTest.java</exclude>
+            <!-- fails web.xml --><exclude>org/jboss/resteasy/test/core/basic/ApplicationTest.java</exclude>
+
+            <exclude>org/jboss/resteasy/test/asynch/XX**</exclude>
+            <!-- FAILS todo  --><exclude>org/jboss/resteasy/test/asynch/AsyncInjectionTest.java</exclude>
+            <!-- FAILS todo  --><exclude>org/jboss/resteasy/test/asynch/ComprehensiveJaxrsTest.java</exclude>
+
+
+
+            <!-- FAILS todo <exclude>org/jboss/resteasy/test/asynch/AsyncPostProcessingTest.java</exclude>
+          -->
+            <!-- PASSES --><exclude>org/jboss/resteasy/test/asynch/JaxrsAsyncServletTest.java</exclude>
+
+
+
+
+
+            <exclude>org/jboss/resteasy/test/asynch/AsyncGenericEntityTest.java</exclude>
+
+            <!-- FAILS todo (does not handle path http://localhost:8081/)  --><exclude>org/jboss/resteasy/test/asynch/AsyncRequestFilterTest.java</exclude>
+            <!-- FAILS todo (does not handle path http://localhost:8081/)  --><exclude>org/jboss/resteasy/test/asynch/JaxrsAsyncTest.java</exclude>
+            <!-- FAILS todo (context param resteasy.async.job.service.enabled not passed to test code)
+                    Complex deployment situation not handled by quarkus
+                    No tests are run
+                      org.jboss.arquillian.container.spi.client.container.DeploymentException:
+                      Unable to start the runtime runner
+                      cause:  java.lang.NullPointerException: Bean is null
+                    stacktrace
+                      io.quarkus.arquillian.QuarkusDeployableContainer.deploy(QuarkusDeployableContainer.java:202)
+                      org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:151)
+                      org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:118)
+                      org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:239)
+                      org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:118)
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                      java.base/java.lang.reflect.Method.invoke(Method.java:566)
+                      org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+            --><exclude>org/jboss/resteasy/test/asynch/AsynchBasicTest.java</exclude>
+
+            <!-- Success todo (test passes but displays msg on cmd line
+              .. javax.ws.rs.ServiceUnavailableException: HTTP 503 Service Unavailable)   --><exclude>org/jboss/resteasy/test/asynch/AsyncServletTest.java</exclude>
+            <!-- FAILS todo (ContextParameters.RESTEASY_PREFER_JACKSON_OVER_JSONB is not passed as parameter
+              and ResteasyJackson2Provider is not called but JsonBindingProvider is.
+              The returned data is listed in reverse order) --><exclude>org/jboss/resteasy/test/asynch/AsynchContextualDataTest.java</exclude>
+            <!-- FAILS todo (runs but .. sending back 500: org.jboss.resteasy.spi.UnhandledException)  --><exclude>org/jboss/resteasy/test/asynch/AsyncUnhandledExceptionTest.java</exclude>
+            <!-- FAILS todo (does not handle path http://localhost:8081/) --><exclude>org/jboss/resteasy/test/asynch/SuspendAnnotationTest.java</exclude>
+            <!-- FAILS todo  (does not handle path http://localhost:8081/?asynch=true
+                No resteasy SynchronousDispatcher never called)--><exclude>org/jboss/resteasy/test/asynch/AsynchCounterTest.java</exclude>
+
+            <!--   -->
+            <!-- FAILS (java.io.IOException: throw exception)  --><exclude>org/jboss/resteasy/test/asynch/CallbackTest.java</exclude>
+
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+      <id>native</id>
+      <activation>
+        <property>
+          <name>native</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>${surefire-plugin.version}</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>integration-test</goal>
+                  <goal>verify</goal>
+                </goals>
+                <configuration>
+                  <systemProperties>
+                    <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                  </systemProperties>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <quarkus.package.type>native</quarkus.package.type>
+      </properties>
+    </profile>
+  </profiles>
+</project>
